@@ -1,0 +1,95 @@
+import {
+  FaSortAmountDown,
+  FaSearch,
+  FaList,
+  FaLink,
+  FaLayerGroup,
+  FaTree,
+  FaProjectDiagram,
+  FaPuzzlePiece,
+  FaBolt,
+  FaRandom,
+  FaFont,
+} from "react-icons/fa";
+
+const algorithmCategories = [
+  {
+    id: 1,
+    title: "Sorting",
+    description: "Arrange data efficiently using different sorting techniques.",
+    algorithms: 10,
+    icon: FaSortAmountDown,
+  },
+  {
+    id: 2,
+    title: "Searching",
+    description: "Find elements efficiently in arrays and data structures.",
+    algorithms: 6,
+    icon: FaSearch,
+  },
+  {
+    id: 3,
+    title: "Arrays",
+    description: "Learn traversal, prefix sums and sliding window.",
+    algorithms: 12,
+    icon: FaList,
+  },
+  {
+    id: 4,
+    title: "Linked Lists",
+    description: "Master singly, doubly and circular linked lists.",
+    algorithms: 8,
+    icon: FaLink,
+  },
+  {
+    id: 5,
+    title: "Stacks & Queues",
+    description: "Understand LIFO, FIFO and monotonic stack concepts.",
+    algorithms: 9,
+    icon: FaLayerGroup,
+  },
+  {
+    id: 6,
+    title: "Trees",
+    description: "Binary Trees, BST and traversals.",
+    algorithms: 14,
+    icon: FaTree,
+  },
+  {
+    id: 7,
+    title: "Graphs",
+    description: "DFS, BFS, Shortest Paths and MST.",
+    algorithms: 15,
+    icon: FaProjectDiagram,
+  },
+  {
+    id: 8,
+    title: "Dynamic Programming",
+    description: "Build intuition through memoization and tabulation.",
+    algorithms: 18,
+    icon: FaPuzzlePiece,
+  },
+  {
+    id: 9,
+    title: "Greedy",
+    description: "Solve optimization problems using greedy strategies.",
+    algorithms: 7,
+    icon: FaBolt,
+  },
+  {
+    id: 10,
+    title: "Backtracking",
+    description: "Generate permutations and combinations.",
+    algorithms: 8,
+    icon: FaRandom,
+  },
+  {
+    id: 11,
+    title: "Strings",
+    description: "Pattern matching and string algorithms.",
+    algorithms: 11,
+    icon: FaFont,
+  },
+];
+
+export default algorithmCategories;

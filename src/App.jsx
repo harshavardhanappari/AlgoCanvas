@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import Visualizer from "./pages/Visualizer/Visualizer";
 import Layout from "./components/Layout/Layout";
 
 import Home from "./pages/Home/Home";
@@ -30,8 +30,12 @@ const router = createBrowserRouter([
         element: <Algorithms />,
       },
       {
-        path: "algorithm/:id",
+        path: "algorithms/:slug",
         element: <AlgorithmDetails />,
+      },
+      {
+        path: "algorithms/:slug/:algorithmSlug",
+        element: <Visualizer />,
       },
     ],
   },

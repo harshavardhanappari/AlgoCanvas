@@ -1,18 +1,17 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 const Layout = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="flex min-h-screen flex-col bg-white">
       <Navbar />
 
-      <main>
+      <main className="flex-1">
         <Outlet />
       </main>
 
-      <footer className="border-t py-8 text-center text-gray-500">
-        © 2026 AlgoCanvas. Built with React & Tailwind CSS.
-      </footer>
+      <Footer />
     </div>
   );
 };
