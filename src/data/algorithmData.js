@@ -1,7 +1,8 @@
 const algorithmData = {
   sorting: {
     title: "Sorting",
-    description: "Arrange data efficiently using different sorting techniques.",
+    description:
+      "Arrange data efficiently using different sorting techniques.",
 
     algorithms: [
       {

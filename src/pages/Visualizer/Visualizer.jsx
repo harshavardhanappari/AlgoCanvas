@@ -1,32 +1,26 @@
 import { useParams } from "react-router-dom";
+import BubbleSort from "../../visualizers/BubbleSort";
 
 const Visualizer = () => {
-  const { slug, algorithmSlug } = useParams();
+  const { algorithmSlug } = useParams();
 
-  const formattedName = algorithmSlug
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
+  switch (algorithmSlug) {
+    case "bubble-sort":
+      return <BubbleSort />;
 
-  return (
-    <section className="mx-auto max-w-7xl px-6 py-20">
-      <div>
-        <h1 className="text-5xl font-bold text-gray-900">
-          {formattedName}
-        </h1>
+    default:
+      return (
+        <div className="mx-auto max-w-5xl px-6 py-20 text-center">
+          <h1 className="text-4xl font-bold text-gray-900 capitalize">
+            {algorithmSlug.replace(/-/g, " ")}
+          </h1>
 
-        <p className="mt-4 text-lg text-gray-600">
-          Category: {slug}
-        </p>
-      </div>
-
-      <div className="mt-12 flex h-96 items-center justify-center rounded-3xl border-2 border-dashed border-gray-300 bg-gray-50">
-        <h2 className="text-3xl font-semibold text-gray-400">
-          Visualizer Coming Soon 🚀
-        </h2>
-      </div>
-    </section>
-  );
+          <p className="mt-6 text-lg text-gray-500">
+            Visualizer coming soon 🚀
+          </p>
+        </div>
+      );
+  }
 };
 
 export default Visualizer;
