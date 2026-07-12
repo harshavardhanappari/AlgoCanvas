@@ -1,6 +1,6 @@
-const PseudoCode = ({ code, activeLine = -1 }) => {
+const PseudoCode = ({ code, activeLine }) => {
   return (
-    <section className="mt-10 rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
+    <section className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm h-full">
       <h2 className="text-3xl font-bold text-gray-900">
         Pseudo Code
       </h2>
@@ -9,9 +9,9 @@ const PseudoCode = ({ code, activeLine = -1 }) => {
         {code.map((line, index) => (
           <div
             key={index}
-            className={`rounded-lg px-4 py-1 font-mono text-lg leading-9 transition-all duration-300 ${
+            className={`rounded-md px-3 py-2 font-mono text-lg transition-all duration-300 ${
               activeLine === index
-                ? "bg-yellow-400 font-bold text-gray-900"
+                ? "bg-yellow-400 text-gray-900"
                 : "text-green-400"
             }`}
           >

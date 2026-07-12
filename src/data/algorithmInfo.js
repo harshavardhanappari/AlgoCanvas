@@ -23,6 +23,33 @@ const algorithmInfo = {
       "            swap(arr[j], arr[j + 1])",
     ],
   },
+
+  selectionSort: {
+    title: "Selection Sort",
+
+    description:
+      "Selection Sort repeatedly finds the minimum element from the unsorted portion of the array and places it at its correct position.",
+
+    complexity: {
+      best: "O(n²)",
+      average: "O(n²)",
+      worst: "O(n²)",
+      space: "O(1)",
+    },
+
+    stable: "No",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "for i = 0 to n - 2",
+      "    minIndex = i",
+      "    for j = i + 1 to n - 1",
+      "        if arr[j] < arr[minIndex]",
+      "            minIndex = j",
+      "    swap(arr[i], arr[minIndex])",
+    ],
+  },
 };
 
 export default algorithmInfo;

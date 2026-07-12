@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import BubbleSort from "../../visualizers/BubbleSort";
+import SelectionSort from "../../visualizers/SelectionSort";
 
 const Visualizer = () => {
   const { algorithmSlug } = useParams();
@@ -7,7 +8,8 @@ const Visualizer = () => {
   switch (algorithmSlug) {
     case "bubble-sort":
       return <BubbleSort />;
-
+    case "selection-sort":
+      return <SelectionSort/>;
     default:
       return (
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">
