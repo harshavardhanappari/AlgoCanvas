@@ -50,6 +50,34 @@ const algorithmInfo = {
       "    swap(arr[i], arr[minIndex])",
     ],
   },
+
+  insertionSort: {
+    title: "Insertion Sort",
+
+    description:
+      "Insertion Sort builds the sorted array one element at a time by inserting each element into its correct position.",
+
+    complexity: {
+      best: "O(n)",
+      average: "O(n²)",
+      worst: "O(n²)",
+      space: "O(1)",
+    },
+
+    stable: "Yes",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "for i = 1 to n - 1",
+      "    key = arr[i]",
+      "    j = i - 1",
+      "    while j >= 0 and arr[j] > key",
+      "        arr[j + 1] = arr[j]",
+      "        j = j - 1",
+      "    arr[j + 1] = key",
+    ],
+  },
 };
 
 export default algorithmInfo;
