@@ -78,6 +78,32 @@ const algorithmInfo = {
       "    arr[j + 1] = key",
     ],
   },
+  mergeSort: {
+    title: "Merge Sort",
+
+    description:
+      "Merge Sort uses the Divide and Conquer technique by recursively dividing the array into halves and then merging the sorted halves.",
+
+    complexity: {
+      best: "O(n log n)",
+      average: "O(n log n)",
+      worst: "O(n log n)",
+      space: "O(n)",
+    },
+
+    stable: "Yes",
+
+    inPlace: "No",
+
+    pseudoCode: [
+      "mergeSort(left, right)",
+      "    if left >= right return",
+      "    mid = (left + right) / 2",
+      "    mergeSort(left, mid)",
+      "    mergeSort(mid + 1, right)",
+      "    merge(left, mid, right)",
+    ],
+  },
 };
 
 export default algorithmInfo;

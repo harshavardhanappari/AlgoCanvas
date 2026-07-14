@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import BubbleSort from "../../visualizers/BubbleSort";
 import SelectionSort from "../../visualizers/SelectionSort";
 import InsertionSort from "../../visualizers/InsertionSort";
-
+import MergeSort from "../../visualizers/MergeSort";
 
 const Visualizer = () => {
   const { algorithmSlug } = useParams();
@@ -11,9 +11,11 @@ const Visualizer = () => {
     case "bubble-sort":
       return <BubbleSort />;
     case "selection-sort":
-      return <SelectionSort/>;
+      return <SelectionSort />;
     case "insertion-sort":
-      return <InsertionSort/>;
+      return <InsertionSort />;
+    case "merge-sort":
+      return <MergeSort />;
     default:
       return (
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">
