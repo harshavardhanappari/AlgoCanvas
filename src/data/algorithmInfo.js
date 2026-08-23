@@ -104,6 +104,36 @@ const algorithmInfo = {
       "    merge(left, mid, right)",
     ],
   },
+  quickSort: {
+    title: "Quick Sort",
+
+    description:
+      "Quick Sort uses the Divide and Conquer technique by selecting a pivot, partitioning the array around it, and recursively sorting the left and right parts.",
+
+    complexity: {
+      best: "O(n log n)",
+      average: "O(n log n)",
+      worst: "O(n²)",
+      space: "O(log n)",
+    },
+
+    stable: "No",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "quickSort(left, right)",
+      "    if left >= right return",
+      "    pivotIndex = partition(left, right)",
+      "    quickSort(left, pivotIndex - 1)",
+      "    quickSort(pivotIndex + 1, right)",
+      "partition(left, right)",
+      "    choose pivot",
+      "    compare elements with pivot",
+      "    swap elements when needed",
+      "    place pivot in correct position",
+    ],
+  },
 };
 
 export default algorithmInfo;
