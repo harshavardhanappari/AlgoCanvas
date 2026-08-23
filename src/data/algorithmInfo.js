@@ -134,6 +134,37 @@ const algorithmInfo = {
       "    place pivot in correct position",
     ],
   },
+  heapSort: {
+    title: "Heap Sort",
+
+    description:
+      "Heap Sort builds a Max Heap and repeatedly moves the maximum element to the end of the array, then restores the heap using heapify.",
+
+    complexity: {
+      best: "O(n log n)",
+      average: "O(n log n)",
+      worst: "O(n log n)",
+      space: "O(1)",
+    },
+
+    stable: "No",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "heapSort(array)",
+      "    buildMaxHeap(array)",
+      "    for end = n - 1 down to 1",
+      "        swap(array[0], array[end])",
+      "        reduce heap size",
+      "        heapify(array, 0, heapSize)",
+      "heapify(array, root, heapSize)",
+      "    find largest among root and children",
+      "    if largest is not root",
+      "        swap root with largest",
+      "        heapify(array, largest, heapSize)",
+    ],
+  },
 };
 
 export default algorithmInfo;

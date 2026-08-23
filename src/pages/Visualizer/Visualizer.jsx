@@ -4,6 +4,7 @@ import SelectionSort from "../../visualizers/SelectionSort";
 import InsertionSort from "../../visualizers/InsertionSort";
 import MergeSort from "../../visualizers/MergeSort";
 import QuickSort from "../../visualizers/QuickSort";
+import HeapSort from "../../visualizers/HeapSort";
 
 const Visualizer = () => {
   const { algorithmSlug } = useParams();
@@ -19,6 +20,8 @@ const Visualizer = () => {
       return <MergeSort />;
     case "quick-sort":
       return <QuickSort />;
+    case "heap-sort":
+      return <HeapSort />;
     default:
       return (
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">
