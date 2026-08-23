@@ -6,6 +6,7 @@ import PseudoCode from "../components/PseudoCode/PseudoCode";
 import Statistics from "../components/Statistics/Statistics";
 import CurrentStep from "../components/CurrentStep/CurrentStep";
 
+
 const InsertionSort = () => {
   const [array, setArray] = useState([]);
   const [arraySize, setArraySize] = useState(20);
@@ -261,6 +262,7 @@ const InsertionSort = () => {
           </div>
         </div>
       )}
+
       {/* Sliders */}
 
       <div className="mt-10 grid gap-8 md:grid-cols-2">
