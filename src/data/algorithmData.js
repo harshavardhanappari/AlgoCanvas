@@ -43,6 +43,27 @@ const algorithmData = {
       },
     ],
   },
+
+  searching: {
+    title: "Searching",
+    description:
+      "Find elements efficiently in arrays and data structures.",
+
+    algorithms: [
+      {
+        id: 1,
+        name: "Linear Search",
+        slug: "linear-search",
+        difficulty: "Easy",
+      },
+      {
+        id: 2,
+        name: "Binary Search",
+        slug: "binary-search",
+        difficulty: "Easy",
+      },
+    ],
+  },
 };
 
 export default algorithmData;

@@ -165,6 +165,31 @@ const algorithmInfo = {
       "        heapify(array, largest, heapSize)",
     ],
   },
+  linearSearch: {
+    title: "Linear Search",
+
+    description:
+      "Linear Search checks each element one by one until the target element is found or the entire array has been searched.",
+
+    complexity: {
+      best: "O(1)",
+      average: "O(n)",
+      worst: "O(n)",
+      space: "O(1)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "linearSearch(array, target)",
+      "    for i = 0 to n - 1",
+      "        if array[i] == target",
+      "            return i",
+      "    return -1",
+    ],
+  },
 };
 
 export default algorithmInfo;
