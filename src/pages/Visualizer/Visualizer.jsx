@@ -7,6 +7,7 @@ import QuickSort from "../../visualizers/QuickSort";
 import HeapSort from "../../visualizers/HeapSort";
 import LinearSearch from "../../visualizers/LinearSearch";
 import BinarySearch from "../../visualizers/BinarySearch";
+import ArrayTraversal from "../../visualizers/ArrayTraversal";
 
 const Visualizer = () => {
   const { algorithmSlug } = useParams();
@@ -28,6 +29,8 @@ const Visualizer = () => {
       return <LinearSearch />;
     case "binary-search":
       return <BinarySearch />;
+    case "array-traversal":
+      return <ArrayTraversal />;
     default:
       return (
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">

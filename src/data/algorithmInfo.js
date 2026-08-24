@@ -222,6 +222,29 @@ const algorithmInfo = {
       "    return -1",
     ],
   },
+  arrayTraversal: {
+    title: "Array Traversal",
+
+    description:
+      "Array Traversal visits each element of an array sequentially from the beginning to the end.",
+
+    complexity: {
+      best: "O(n)",
+      average: "O(n)",
+      worst: "O(n)",
+      space: "O(1)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "traverse(array)",
+      "    for i = 0 to n - 1",
+      "        visit array[i]",
+    ],
+  },
 };
 
 export default algorithmInfo;
