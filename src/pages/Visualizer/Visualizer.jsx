@@ -6,6 +6,7 @@ import MergeSort from "../../visualizers/MergeSort";
 import QuickSort from "../../visualizers/QuickSort";
 import HeapSort from "../../visualizers/HeapSort";
 import LinearSearch from "../../visualizers/LinearSearch";
+import BinarySearch from "../../visualizers/BinarySearch";
 
 const Visualizer = () => {
   const { algorithmSlug } = useParams();
@@ -25,6 +26,8 @@ const Visualizer = () => {
       return <HeapSort />;
     case "linear-search":
       return <LinearSearch />;
+    case "binary-search":
+      return <BinarySearch />;
     default:
       return (
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">

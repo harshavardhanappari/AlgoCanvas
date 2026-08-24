@@ -190,6 +190,38 @@ const algorithmInfo = {
       "    return -1",
     ],
   },
+  binarySearch: {
+    title: "Binary Search",
+
+    description:
+      "Binary Search repeatedly divides a sorted array in half and eliminates the half that cannot contain the target.",
+
+    complexity: {
+      best: "O(1)",
+      average: "O(log n)",
+      worst: "O(log n)",
+      space: "O(1)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "binarySearch(array, target)",
+      "    left = 0",
+      "    right = n - 1",
+      "    while left <= right",
+      "        mid = (left + right) / 2",
+      "        if array[mid] == target",
+      "            return mid",
+      "        else if array[mid] < target",
+      "            left = mid + 1",
+      "        else",
+      "            right = mid - 1",
+      "    return -1",
+    ],
+  },
 };
 
 export default algorithmInfo;
