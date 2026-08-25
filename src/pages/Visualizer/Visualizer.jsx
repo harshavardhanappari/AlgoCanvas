@@ -9,6 +9,7 @@ import LinearSearch from "../../visualizers/LinearSearch";
 import BinarySearch from "../../visualizers/BinarySearch";
 import ArrayTraversal from "../../visualizers/ArrayTraversal";
 import ArrayInsertionDeletion from "../../visualizers/ArrayInsertionDeletion";
+import ArraySearching from "../../visualizers/ArraySearching";
 
 const Visualizer = () => {
   const { algorithmSlug } = useParams();
@@ -34,6 +35,8 @@ const Visualizer = () => {
       return <ArrayTraversal />;
     case "array-insertion-deletion":
       return <ArrayInsertionDeletion />;
+    case "array-searching":
+      return <ArraySearching />;
     default:
       return (
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">

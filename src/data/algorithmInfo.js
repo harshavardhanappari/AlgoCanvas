@@ -273,6 +273,31 @@ const algorithmInfo = {
       "    reduce array size",
     ],
   },
+  arraySearching: {
+    title: "Searching in Arrays",
+
+    description:
+      "Search through an array to find a target element and determine its position.",
+
+    complexity: {
+      best: "O(1)",
+      average: "O(n)",
+      worst: "O(n)",
+      space: "O(1)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "search(array, target)",
+      "    for i = 0 to n - 1",
+      "        if array[i] == target",
+      "            return i",
+      "    return -1",
+    ],
+  },
 };
 
 export default algorithmInfo;
