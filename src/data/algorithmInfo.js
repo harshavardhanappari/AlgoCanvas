@@ -245,6 +245,34 @@ const algorithmInfo = {
       "        visit array[i]",
     ],
   },
+  arrayInsertionDeletion: {
+    title: "Insertion & Deletion",
+
+    description:
+      "Learn how elements are inserted into and deleted from an array while maintaining the order of the remaining elements.",
+
+    complexity: {
+      best: "O(1)",
+      average: "O(n)",
+      worst: "O(n)",
+      space: "O(1)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "insert(array, index, value)",
+      "    for i = n - 1 down to index",
+      "        array[i + 1] = array[i]",
+      "    array[index] = value",
+      "delete(array, index)",
+      "    for i = index to n - 2",
+      "        array[i] = array[i + 1]",
+      "    reduce array size",
+    ],
+  },
 };
 
 export default algorithmInfo;
