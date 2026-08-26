@@ -298,6 +298,37 @@ const algorithmInfo = {
       "    return -1",
     ],
   },
+  twoPointers: {
+    title: "Two Pointers",
+
+    description:
+      "Use two pointers moving from opposite ends of a sorted array to efficiently find a pair of elements with a given target sum.",
+
+    complexity: {
+      best: "O(1)",
+      average: "O(n)",
+      worst: "O(n)",
+      space: "O(1)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "left = 0",
+      "right = n - 1",
+      "while left < right",
+      "    sum = array[left] + array[right]",
+      "    if sum == target",
+      "        return pair",
+      "    else if sum < target",
+      "        left++",
+      "    else",
+      "        right--",
+      "return no pair",
+    ],
+  },
 };
 
 export default algorithmInfo;
