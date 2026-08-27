@@ -78,6 +78,7 @@ const algorithmInfo = {
       "    arr[j + 1] = key",
     ],
   },
+
   mergeSort: {
     title: "Merge Sort",
 
@@ -104,6 +105,7 @@ const algorithmInfo = {
       "    merge(left, mid, right)",
     ],
   },
+
   quickSort: {
     title: "Quick Sort",
 
@@ -134,6 +136,7 @@ const algorithmInfo = {
       "    place pivot in correct position",
     ],
   },
+
   heapSort: {
     title: "Heap Sort",
 
@@ -165,6 +168,7 @@ const algorithmInfo = {
       "        heapify(array, largest, heapSize)",
     ],
   },
+
   linearSearch: {
     title: "Linear Search",
 
@@ -190,6 +194,7 @@ const algorithmInfo = {
       "    return -1",
     ],
   },
+
   binarySearch: {
     title: "Binary Search",
 
@@ -222,6 +227,7 @@ const algorithmInfo = {
       "    return -1",
     ],
   },
+
   arrayTraversal: {
     title: "Array Traversal",
 
@@ -245,6 +251,7 @@ const algorithmInfo = {
       "        visit array[i]",
     ],
   },
+
   arrayInsertionDeletion: {
     title: "Insertion & Deletion",
 
@@ -273,6 +280,7 @@ const algorithmInfo = {
       "    reduce array size",
     ],
   },
+
   arraySearching: {
     title: "Searching in Arrays",
 
@@ -298,6 +306,7 @@ const algorithmInfo = {
       "    return -1",
     ],
   },
+
   twoPointers: {
     title: "Two Pointers",
 
@@ -329,6 +338,7 @@ const algorithmInfo = {
       "return no pair",
     ],
   },
+
   slidingWindow: {
     title: "Sliding Window",
 
@@ -354,6 +364,34 @@ const algorithmInfo = {
       "    add array[right] to window",
       "    update maxSum if needed",
       "return maxSum",
+    ],
+  },
+
+  prefixSum: {
+    title: "Prefix Sum",
+
+    description:
+      "Prefix Sum preprocesses an array so that the sum of any range can be calculated efficiently.",
+
+    complexity: {
+      best: "O(n)",
+      average: "O(n)",
+      worst: "O(n)",
+      space: "O(n)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "No",
+
+    pseudoCode: [
+      "prefix[0] = array[0]",
+      "for i = 1 to n - 1",
+      "    prefix[i] = prefix[i - 1] + array[i]",
+      "rangeSum(left, right)",
+      "    if left == 0",
+      "        return prefix[right]",
+      "    return prefix[right] - prefix[left - 1]",
     ],
   },
 };
