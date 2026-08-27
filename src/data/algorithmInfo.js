@@ -329,6 +329,33 @@ const algorithmInfo = {
       "return no pair",
     ],
   },
+  slidingWindow: {
+    title: "Sliding Window",
+
+    description:
+      "The Sliding Window technique maintains a fixed-size window and moves it across an array to efficiently find the maximum sum subarray.",
+
+    complexity: {
+      best: "O(n)",
+      average: "O(n)",
+      worst: "O(n)",
+      space: "O(1)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "calculate sum of first window of size k",
+      "maxSum = currentWindowSum",
+      "for right = k to n - 1",
+      "    remove array[right - k] from window",
+      "    add array[right] to window",
+      "    update maxSum if needed",
+      "return maxSum",
+    ],
+  },
 };
 
 export default algorithmInfo;

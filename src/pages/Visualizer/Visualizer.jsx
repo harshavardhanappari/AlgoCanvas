@@ -11,6 +11,7 @@ import ArrayTraversal from "../../visualizers/ArrayTraversal";
 import ArrayInsertionDeletion from "../../visualizers/ArrayInsertionDeletion";
 import ArraySearching from "../../visualizers/ArraySearching";
 import TwoPointers from "../../visualizers/TwoPointers";
+import SlidingWindow from "../../visualizers/SlidingWindow";
 
 const Visualizer = () => {
   const { algorithmSlug } = useParams();
@@ -40,6 +41,8 @@ const Visualizer = () => {
       return <ArraySearching />;
     case "two-pointers":
       return <TwoPointers />;
+    case "sliding-window":
+      return <SlidingWindow />;
     default:
       return (
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">
