@@ -394,6 +394,32 @@ const algorithmInfo = {
       "    return prefix[right] - prefix[left - 1]",
     ],
   },
+  kadanesAlgorithm: {
+    title: "Kadane's Algorithm",
+
+    description:
+      "Kadane's Algorithm efficiently finds the maximum sum of a contiguous subarray by deciding at each element whether to extend the current subarray or start a new one.",
+
+    complexity: {
+      best: "O(n)",
+      average: "O(n)",
+      worst: "O(n)",
+      space: "O(1)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "currentSum = array[0]",
+      "maxSum = array[0]",
+      "for i = 1 to n - 1",
+      "    currentSum = max(array[i], currentSum + array[i])",
+      "    maxSum = max(maxSum, currentSum)",
+      "return maxSum",
+    ],
+  },
 };
 
 export default algorithmInfo;
