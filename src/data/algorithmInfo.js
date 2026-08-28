@@ -420,6 +420,37 @@ const algorithmInfo = {
       "return maxSum",
     ],
   },
+  binarySearchArrays: {
+    title: "Binary Search on Arrays",
+
+    description:
+      "Binary Search efficiently finds a target element in a sorted array by repeatedly checking the middle element and eliminating half of the remaining search space.",
+
+    complexity: {
+      best: "O(1)",
+      average: "O(log n)",
+      worst: "O(log n)",
+      space: "O(1)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "left = 0",
+      "right = n - 1",
+      "while left <= right",
+      "    mid = left + (right - left) / 2",
+      "    if array[mid] == target",
+      "        return mid",
+      "    else if array[mid] < target",
+      "        left = mid + 1",
+      "    else",
+      "        right = mid - 1",
+      "return -1",
+    ],
+  },
 };
 
 export default algorithmInfo;

@@ -14,6 +14,7 @@ import TwoPointers from "../../visualizers/TwoPointers";
 import SlidingWindow from "../../visualizers/SlidingWindow";
 import PrefixSum from "../../visualizers/PrefixSum";
 import KadanesAlgorithm from "../../visualizers/KadanesAlgorithm";
+import BinarySearchArrays from "../../visualizers/BinarySearchArrays";
 
 const Visualizer = () => {
   const { algorithmSlug } = useParams();
@@ -49,6 +50,8 @@ const Visualizer = () => {
       return <PrefixSum />;
     case "kadanes-algorithm":
       return <KadanesAlgorithm />;
+    case "binary-search-arrays":
+      return <BinarySearchArrays />;
     default:
       return (
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">
