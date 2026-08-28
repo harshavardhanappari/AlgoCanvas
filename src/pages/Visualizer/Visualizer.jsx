@@ -15,6 +15,7 @@ import SlidingWindow from "../../visualizers/SlidingWindow";
 import PrefixSum from "../../visualizers/PrefixSum";
 import KadanesAlgorithm from "../../visualizers/KadanesAlgorithm";
 import BinarySearchArrays from "../../visualizers/BinarySearchArrays";
+import ArraySorting from "../../visualizers/ArraySorting";
 
 const Visualizer = () => {
   const { algorithmSlug } = useParams();
@@ -52,6 +53,8 @@ const Visualizer = () => {
       return <KadanesAlgorithm />;
     case "binary-search-arrays":
       return <BinarySearchArrays />;
+    case "array-sorting":
+      return <ArraySorting />;
     default:
       return (
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">

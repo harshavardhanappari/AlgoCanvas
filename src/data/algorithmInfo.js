@@ -451,6 +451,31 @@ const algorithmInfo = {
       "return -1",
     ],
   },
+  arraySorting: {
+    title: "Sorting an Array",
+
+    description:
+      "Sorting an array arranges its elements in ascending order. This visualizer demonstrates the sorting process by repeatedly comparing elements and placing them in their correct positions.",
+
+    complexity: {
+      best: "O(n²)",
+      average: "O(n²)",
+      worst: "O(n²)",
+      space: "O(1)",
+    },
+
+    stable: "Yes",
+    
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "for i = 0 to n - 1",
+      "    for j = 0 to n - i - 2",
+      "        if array[j] > array[j + 1]",
+      "            swap(array[j], array[j + 1])",
+      "return sorted array",
+    ],
+  },
 };
 
 export default algorithmInfo;
