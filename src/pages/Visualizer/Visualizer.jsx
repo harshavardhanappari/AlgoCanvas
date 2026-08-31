@@ -16,6 +16,9 @@ import PrefixSum from "../../visualizers/PrefixSum";
 import KadanesAlgorithm from "../../visualizers/KadanesAlgorithm";
 import BinarySearchArrays from "../../visualizers/BinarySearchArrays";
 import ArraySorting from "../../visualizers/ArraySorting";
+import MergeIntervals from "../../visualizers/MergeIntervals";
+import RotateArray from "../../visualizers/RotateArray";
+import MajorityElement from "../../visualizers/MajorityElement";
 
 const Visualizer = () => {
   const { algorithmSlug } = useParams();
@@ -55,6 +58,12 @@ const Visualizer = () => {
       return <BinarySearchArrays />;
     case "array-sorting":
       return <ArraySorting />;
+    case "merge-intervals":
+      return <MergeIntervals />;
+    case "rotate-array":
+      return <RotateArray />;
+    case "majority-element":
+      return <MajorityElement />;
     default:
       return (
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">

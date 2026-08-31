@@ -465,7 +465,7 @@ const algorithmInfo = {
     },
 
     stable: "Yes",
-    
+
     inPlace: "Yes",
 
     pseudoCode: [
@@ -474,6 +474,88 @@ const algorithmInfo = {
       "        if array[j] > array[j + 1]",
       "            swap(array[j], array[j + 1])",
       "return sorted array",
+    ],
+  },
+  mergeIntervals: {
+    title: "Merge Intervals",
+
+    description:
+      "Merge Intervals sorts intervals by their starting value and combines overlapping intervals into a single larger interval.",
+
+    complexity: {
+      best: "O(n log n)",
+      average: "O(n log n)",
+      worst: "O(n log n)",
+      space: "O(n)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "No",
+
+    pseudoCode: [
+      "sort intervals by starting value",
+      "merged = []",
+      "for each interval",
+      "    if merged is empty or no overlap",
+      "        add interval to merged",
+      "    else",
+      "        merge with previous interval",
+      "return merged",
+    ],
+  },
+  rotateArray: {
+    title: "Rotate Array",
+
+    description:
+      "Rotate an array to the right by k positions. Elements shifted beyond the end are moved back to the beginning.",
+
+    complexity: {
+      best: "O(n)",
+      average: "O(n)",
+      worst: "O(n)",
+      space: "O(1)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "reverse entire array",
+      "reverse first k elements",
+      "reverse remaining n - k elements",
+      "return rotated array",
+    ],
+  },
+  majorityElement: {
+    title: "Majority Element",
+
+    description:
+      "The Majority Element is the element that appears more than n/2 times in an array. The Boyer-Moore Voting Algorithm finds it efficiently in linear time and constant space.",
+
+    complexity: {
+      best: "O(n)",
+      average: "O(n)",
+      worst: "O(n)",
+      space: "O(1)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "candidate = null",
+      "count = 0",
+      "for each element in array",
+      "    if count == 0",
+      "        candidate = element",
+      "    if element == candidate",
+      "        count++",
+      "    else",
+      "        count--",
+      "return candidate",
     ],
   },
 };
