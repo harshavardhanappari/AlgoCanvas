@@ -1,8 +1,7 @@
 const algorithmData = {
   sorting: {
     title: "Sorting",
-    description:
-      "Arrange data efficiently using different sorting techniques.",
+    description: "Arrange data efficiently using different sorting techniques.",
 
     algorithms: [
       {
@@ -46,8 +45,7 @@ const algorithmData = {
 
   searching: {
     title: "Searching",
-    description:
-      "Find elements efficiently in arrays and data structures.",
+    description: "Find elements efficiently in arrays and data structures.",
 
     algorithms: [
       {
@@ -142,6 +140,63 @@ const algorithmData = {
         name: "Majority Element",
         slug: "majority-element",
         difficulty: "Easy",
+      },
+    ],
+  },
+  linkedLists: {
+    title: "Linked Lists",
+
+    description:
+      "Learn how linked lists work through traversal, insertion, deletion, reversal and pointer-based techniques.",
+
+    algorithms: [
+      {
+        id: 1,
+        name: "Linked List Traversal",
+        slug: "linked-list-traversal",
+        difficulty: "Easy",
+      },
+      {
+        id: 2,
+        name: "Insert at Beginning",
+        slug: "insert-at-beginning",
+        difficulty: "Easy",
+      },
+      {
+        id: 3,
+        name: "Insert at End",
+        slug: "insert-at-end",
+        difficulty: "Easy",
+      },
+      {
+        id: 4,
+        name: "Delete a Node",
+        slug: "delete-a-node",
+        difficulty: "Easy",
+      },
+      {
+        id: 5,
+        name: "Reverse Linked List",
+        slug: "reverse-linked-list",
+        difficulty: "Easy",
+      },
+      {
+        id: 6,
+        name: "Find Middle of Linked List",
+        slug: "find-middle-linked-list",
+        difficulty: "Easy",
+      },
+      {
+        id: 7,
+        name: "Detect Cycle",
+        slug: "detect-cycle",
+        difficulty: "Medium",
+      },
+      {
+        id: 8,
+        name: "Merge Two Sorted Linked Lists",
+        slug: "merge-two-sorted-linked-lists",
+        difficulty: "Medium",
       },
     ],
   },

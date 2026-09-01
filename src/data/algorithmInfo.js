@@ -558,6 +558,55 @@ const algorithmInfo = {
       "return candidate",
     ],
   },
+  linkedListTraversal: {
+    title: "Linked List Traversal",
+
+    description:
+      "Linked List Traversal visits each node one by one, starting from the head and following the next pointers until reaching null.",
+
+    complexity: {
+      best: "O(n)",
+      average: "O(n)",
+      worst: "O(n)",
+      space: "O(1)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "current = head",
+      "while current != null",
+      "    visit current.data",
+      "    current = current.next",
+      "return",
+    ],
+  },
+  insertAtBeginning: {
+    title: "Insert at Beginning",
+
+    description:
+      "Insert a new node at the beginning of a linked list by creating a node and updating its next pointer to the current head.",
+
+    complexity: {
+      best: "O(1)",
+      average: "O(1)",
+      worst: "O(1)",
+      space: "O(1)",
+    },
+
+    stable: "N/A",
+
+    inPlace: "Yes",
+
+    pseudoCode: [
+      "create a new node",
+      "newNode.next = head",
+      "head = newNode",
+      "return head",
+    ],
+  },
 };
 
 export default algorithmInfo;

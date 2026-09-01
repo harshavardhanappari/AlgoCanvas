@@ -19,6 +19,8 @@ import ArraySorting from "../../visualizers/ArraySorting";
 import MergeIntervals from "../../visualizers/MergeIntervals";
 import RotateArray from "../../visualizers/RotateArray";
 import MajorityElement from "../../visualizers/MajorityElement";
+import LinkedListTraversal from "../../visualizers/LinkedListTraversal";
+import InsertAtBeginning from "../../visualizers/InsertAtBeginning";
 
 const Visualizer = () => {
   const { algorithmSlug } = useParams();
@@ -64,6 +66,10 @@ const Visualizer = () => {
       return <RotateArray />;
     case "majority-element":
       return <MajorityElement />;
+    case "linked-list-traversal":
+      return <LinkedListTraversal />;
+    case "insert-at-beginning":
+      return <InsertAtBeginning />;
     default:
       return (
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">

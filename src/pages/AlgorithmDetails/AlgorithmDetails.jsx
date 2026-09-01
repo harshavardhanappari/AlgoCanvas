@@ -6,12 +6,20 @@ const AlgorithmDetails = () => {
 
   const navigate = useNavigate();
 
-  const category = algorithmData[slug];
+  const slugMap = {
+    "linked-lists": "linkedLists",
+  };
+
+  const categoryKey = slugMap[slug] || slug;
+
+  const category = algorithmData[categoryKey];
 
   if (!category) {
     return (
       <section className="mx-auto max-w-7xl px-6 py-20">
-        <h1 className="text-4xl font-bold text-red-500">Category Not Found</h1>
+        <h1 className="text-4xl font-bold text-red-500">
+          Category Not Found
+        </h1>
       </section>
     );
   }
@@ -20,7 +28,9 @@ const AlgorithmDetails = () => {
     <section className="mx-auto max-w-7xl px-6 py-20">
       {/* Heading */}
       <div>
-        <h1 className="text-5xl font-bold text-gray-900">{category.title}</h1>
+        <h1 className="text-5xl font-bold text-gray-900">
+          {category.title}
+        </h1>
 
         <p className="mt-5 max-w-3xl text-lg text-gray-600">
           {category.description}
@@ -45,7 +55,9 @@ const AlgorithmDetails = () => {
             </div>
 
             <button
-              onClick={() => navigate(`/algorithms/${slug}/${algorithm.slug}`)}
+              onClick={() =>
+                navigate(`/algorithms/${slug}/${algorithm.slug}`)
+              }
               className="rounded-xl bg-violet-600 px-5 py-2 font-medium text-white transition-all duration-300 hover:bg-violet-700"
             >
               Visualize
